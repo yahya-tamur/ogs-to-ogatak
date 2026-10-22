@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "OGS → Ogatak",
+  "version": "1.0.0",
+  "description": "Download the SGF of the current online-go.com game/review and open it in Ogatak.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqP7NBO609MIMS+2ZNuVSaxt4ltkJaHi1ROYNzgHtH8pw5u5zpHv8NfvjnXL8PITr58FGXXpiZOsVgiUTpRSWo7kUYBMv+xlNN7kseZ5srbFLSFMBkhUTiBy6EGw3Dl4dG/p3+3z13JxvIBR3xYxv1cp57n+9h9xzGJIa9sjw97j7V5yb3O+6BrcT2/LyJU8V/uag8ywBdGj8iMqUmG/ydr+ZYWSzgdgCO4clRC41iHwNC5iz+OUWXuqY38N8adhthpULIj+LTmJ02iDM2liu5HBlH2WccorwipbeB6AcmRJvvRW11OUdUyDeVWsVnjDvMFVW0pzGBZ2puXxyHmRrRwIDAQAB",
+  "permissions": ["nativeMessaging", "scripting"],
+  "host_permissions": ["https://online-go.com/*"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "Open in Ogatak",
+    "default_icon": { "16": "icon16.png", "32": "icon32.png", "48": "icon48.png" }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+Shift+O" },
+      "description": "Open current OGS game in Ogatak"
+    }
+  },
+  "icons": { "16": "icon16.png", "32": "icon32.png", "48": "icon48.png", "128": "icon128.png" }
+}
